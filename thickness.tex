@@ -1,0 +1,50 @@
+
+\begin{frame}{Thickness}
+	\begin{itemize}
+		\item Thickness control not technically feasible due to numbers of DAC outputs needed
+		\item Design would more be difficult because
+		\begin{itemize}
+			\item Thickness -- traction -- velocity relation: non-linear, look up tables are needed
+			\item Some bias point parameters must be currently set by hand
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thickness}
+\framesubtitle{Sensors and actuators}
+Actuators:
+\begin{itemize}
+	\item Left Motor
+	\item Rolling Motor
+	\item Right Motor
+\end{itemize}
+Sensors:
+\begin{itemize}
+\item Thickness sensor before/after the rolling
+\item Traction sensor before/after the rolling
+\item Velocity sensors for each of the motors
+\item Rolling force sensor
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thickness}
+\framesubtitle{Controller considerations}
+\begin{itemize}
+\item Cascade control:
+\begin{itemize}
+	\item Left Motor - P controller
+	\item Rolling Motor - PI controller - Master
+	\item Right Motor - P controller
+\end{itemize}
+\item Possible to get away with master/slave structure for the traction as well?
+\item Traction control using P-PI for master, probably just P for slave (what about the overshoot?)
+\item Possible to only work with small signals, or should the look up table be used during operation as well?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge Thank you!\\
+Questions?
+\end{center}
+\end{frame}

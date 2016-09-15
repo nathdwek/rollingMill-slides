@@ -1,0 +1,51 @@
+\documentclass[english, 14pt]{beamer}
+
+\usepackage{amsmath}
+
+\usepackage{mathspec}
+\setmonofont[
+  AutoFakeSlant,
+  BoldItalicFeatures={FakeSlant},
+]{Inconsolata}
+\setmathtt{Inconsolata}
+\newcommand{\ilcode}{\texttt}
+
+\usepackage{polyglossia}
+\usepackage{microtype}
+
+\usetheme{default}
+\usecolortheme{whale}
+
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen}
+%\setbeamertemplate{note page}[default]
+\beamertemplatenavigationsymbolsempty
+%\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
+
+\usepackage{siunitx}
+\sisetup{range-phrase=--}
+\sisetup{range-units=single}
+
+\usepackage{amssymb}
+
+%\usepackage[default,otf,light]{sourcesanspro}
+
+\setsansfont[Ligatures = TeX,
+BoldFont=SourceSansPro-Semibold.otf,
+ItalicFont=SourceSansPro-LightIt.otf,
+BoldItalicFont=SourceSansPro-SemiboldIt.otf
+]{SourceSansPro-Light.otf}
+
+\usepackage{pgfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\tikzstyle{block} = [draw, rectangle, minimum height=3em, minimum width=6em]
+\tikzstyle{square} = [draw, rectangle, minimum height=3em, minimum width=3em]
+\tikzstyle{sum} = [draw, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\graphicspath{ {./pics/}}
