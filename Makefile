@@ -10,3 +10,6 @@ pics: $(PDFPICS)
 
 ./pics/%.pdf: ./pics/%.eps
 	cat $< | epstopdf --filter | pdfcrop - $@;
+
+prev:
+	ds okular main.pdf
