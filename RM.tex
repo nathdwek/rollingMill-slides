@@ -1,32 +1,15 @@
 \begin{frame}{Slave Motor (Right)}
-	\framesubtitle{Setpoint Characteristic}
+	\framesubtitle{Setpoint and Response}
   \begin{itemize}
-		\item Feeds the metal strip
-		\item Lower Velocity
+		\item Feeds the metal strip $\Rightarrow$ Lower velocity
+		\item Dynamic Model: $RM(s) \simeq \frac{7.128}{6.0665s+1}$
 	\end{itemize}
-
-		\centering
-			\includegraphics[height=0.5\textheight]{RM_RPM_Current.png}
-	\end{frame}
-
-\begin{frame}{Slave Motor}
-  \framesubtitle{Identification}
-
-
-\begin{equation}
-	RM(s) \simeq \frac{7.128}{6.0665s+1}
-\end{equation}
-
-
-
 			\centering
 				\includegraphics[width=.9\textheight]{RM_systemID.png}
-
-
 \end{frame}
 
 \begin{frame}{Slave Motor}
-  \framesubtitle{Controller Choice}
+  \framesubtitle{Controller Design}
   \begin{block}{P Controller}
 	\begin{itemize}
 		\item Fast response, better tracking than PI
@@ -35,45 +18,11 @@
   \end{block}
 \end{frame}
 
-
-	\begin{frame}{Slave Motor}
-  \framesubtitle{Controller Tuning}
-
-		\centering
-			\includegraphics[height=.7\textheight]{RM_rlocus}
-
-
-
-	\end{frame}
-
-
 \begin{frame}{Slave Motor}
-\framesubtitle{Simulation -- $K_P = 3$}
+\framesubtitle{Tuning Result}
 \centering
-\includegraphics[width = \textwidth]{RM_K3_SIM.png}
+\includegraphics[width = \textwidth]{RM_K3.pdf}
 \end{frame}
-
-
-
-\begin{frame}{Slave Motor}
-\framesubtitle{Verification -- $K_P = 2$ }
-\centering
-\includegraphics[width = \textwidth]{RM_K2.png}
-\end{frame}
-
-
-\begin{frame}{Slave Motor}
-\framesubtitle{Verification -- $K_P = 3$}
-\centering
-\includegraphics[width = \textwidth]{RM_K3.png}
-\end{frame}
-
-
-\begin{frame}{Slave Motor}
-\framesubtitle{Verification -- $K_P = 4$}
-\centering
-\includegraphics[width = \textwidth]{RM_K4.png}
-	\end{frame}
 
 \begin{frame}{Slave Motor}
 \framesubtitle{Conclusion}

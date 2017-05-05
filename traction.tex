@@ -47,7 +47,8 @@
 \end{tikzpicture}}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Traction Control}
+  \framesubtitle{Dynamic Model}
 \[Trac(s) = 13.096\cdot\frac{s+0.9221}{s(s+4.063)}\]
 \includegraphics[width = \textwidth]{tracFit.pdf}
 \end{frame}
@@ -87,6 +88,11 @@
 \end{frame}
 
 \begin{frame}{Traction Control}
+\framesubtitle{Plant model}
+\includegraphics[width = 1.05\textwidth]{traction_whole.pdf}
+\end{frame}
+
+\begin{frame}{Traction Control}
 \framesubtitle{Controller Tuning -- Inner Traction Loop}
 \includegraphics[width = \textwidth]{rmTrac_locus.pdf}
 \end{frame}
@@ -112,8 +118,3 @@ High overshoot\\$\Rightarrow$ should be primary tuning constraint
 \centering
 \includegraphics[height = 0.8\textheight]{totalCurr_k_2_t_3_ramp.pdf}
 \end{frame}
-
-
-
-
-
